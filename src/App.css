@@ -1,28 +1,78 @@
-.App {
-  text-align: center;
+html {
+  color: #000;
+  font-size: 1em;
+  overflow-y: scroll;
+  font-family: 'Lato', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 0 10px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+* {
+  box-sizing: border-box;
 }
 
-.App-title {
-  font-size: 1.5em;
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-1 {flex: 1}
+.flex-2 {flex: 2}
+.flex-3 {flex: 3}
+.flex-4 {flex: 4}
+.flex-5 {flex: 5}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-intro {
-  font-size: large;
+.horizontal-space-between {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.horizontal-space-around {
+  display: flex;
+  justify-content: space-around;
 }
+
+.vertical-center-items {
+  display: flex;
+  align-items: center;
+}
+
+.ta-r {text-align: right;}
+.ta-c {text-align: center;}
+
+.mt\\+\\+\\+ { margin-top: 64px !important; }
+.mt\\+\\+  { margin-top: 48px !important; }
+.mt\\+  { margin-top: 40px !important; }
+.mt   { margin-top: 32px !important; }
+.mt-  { margin-top: 16px !important; }
+.mt-- { margin-top: 8px !important; }
+.mb\\+\\+\\+ { margin-bottom: 64px !important; }
+.mb\\+\\+  { margin-bottom: 48px !important; }
+.mb\\+  { margin-bottom: 40px !important; }
+.mb   { margin-bottom: 32px !important; }
+.mb-  { margin-bottom: 16px !important; }
+.mb-- { margin-bottom: 8px !important; }
+.ml\\+\\+\\+ { margin-left: 64px !important; }
+.ml\\+\\+  { margin-left: 48px !important; }
+.ml\\+  { margin-left: 40px !important; }
+.ml   { margin-left: 32px !important; }
+.ml-  { margin-left: 16px !important; }
+.ml-- { margin-left: 8px !important; }
+.mr\\+\\+\\+ { margin-right: 64px !important; }
+.mr\\+\\+  { margin-right: 48px !important; }
+.mr\\+  { margin-right: 40px !important; }
+.mr   { margin-right: 32px !important; }
+.mr-  { margin-right: 16px !important; }
+.mr-- { margin-right: 8px !important; }

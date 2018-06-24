@@ -1,0 +1,7 @@
+.InputGroup {
+  width: 100%;
+}
+
+.InputGroup > *:not(:first-child) {
+  margin-top: 16px;
+}

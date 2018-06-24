@@ -1,0 +1,73 @@
+.Input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Input__Field {
+  width: 241px;
+  position:relative;
+}
+
+.Input__Field.full {
+  width: 100%;
+}
+
+.Input__Field.password .Trigger {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 17px;
+  color: gray;
+  cursor: pointer;
+}
+
+.Input__Error-box {
+  font-size: 11px;
+  line-height: 16px;
+  min-height: 16px;
+  margin: 2px 0;
+}
+
+.Input__Error-box:first-letter {
+  text-transform: capitalize;
+}
+
+.Input__Field > input {
+  width: 100%;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid gray;
+  padding: 0 14px;
+  transition: all 100ms ease-in-out;
+  box-shadow: none;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.Input__Field > input:focus {
+  border: 1px solid blue;
+  outline: 0;
+}
+
+.Input__Field > input:disabled {
+  border: none;
+}
+
+.Input__Error-box {
+  color: red;
+}
+
+.Input__Error-box label {
+  color: red;
+}
+
+.Input--error input {
+  border: 1px solid red;
+}

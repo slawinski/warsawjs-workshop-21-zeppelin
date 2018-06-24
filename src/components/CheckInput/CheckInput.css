@@ -1,0 +1,52 @@
+.CheckboxLabel {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+.CheckboxLabel .CheckboxInput {
+  display: none;
+}
+.CheckboxLabel .CheckboxInput + .Indicator {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-right: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #979797;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: .2s;
+}
+.CheckboxLabel .CheckboxInput + .Indicator:after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 3px;
+  height: 6px;
+  border: solid #fff;
+  border-width: 0;
+  transform: rotate(45deg);
+  z-index: 255;
+  transition: .2s;
+}
+
+.CheckboxLabel .CheckboxInput:checked + .Indicator {
+  background-color: blue;
+  border-color: blue;
+}
+
+.CheckboxLabel .CheckboxInput:checked + .Indicator:after {
+  border-width: 0 2px 2px 0;
+}
+
+.CheckboxLabel.Disabled {
+  color: gray;
+}
+
+.CheckboxLabel.Disabled .Indicator {
+  background-color: gray;
+  border-color: gray;
+}
